@@ -66,7 +66,7 @@ jobs:
             npm install
             npx semantic-release
           should-run-codecov: false
-          should-deploy: true
+          should-deploy: false
           github-token: ${{ github.token }}
           maven-central-password: ${{ secrets.MAVEN_CENTRAL_PASSWORD }}
           signing-key: ${{ secrets.SIGNING_KEY }}

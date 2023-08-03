@@ -14,10 +14,12 @@ group = "org.danilopianini"
 
 repositories {
     mavenCentral()
+    maven("https://jitpack.io")
 }
 
 dependencies {
     implementation(libs.kotlin.stdlib)
+    implementation(libs.telegram)
     testImplementation(libs.bundles.kotlin.testing)
 }
 

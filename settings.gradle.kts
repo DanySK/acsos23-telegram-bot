@@ -20,4 +20,4 @@ gitHooks {
     createHooks()
 }
 
-rootProject.name = "Template-for-Kotlin-JVM-Projects"
+rootProject.name = "acsos23-telegram-bot"
