@@ -1,12 +1,11 @@
 @Suppress("DSL_SCOPE_VIOLATION")
 plugins {
-    `java-gradle-plugin`
+    application
     alias(libs.plugins.dokka)
     alias(libs.plugins.gitSemVer)
     alias(libs.plugins.kotlin.jvm)
     alias(libs.plugins.kotlin.qa)
-    alias(libs.plugins.publishOnCentral)
-    alias(libs.plugins.multiJvmTesting)
+    alias(libs.plugins.shadowJar)
     alias(libs.plugins.taskTree)
 }
 
@@ -34,6 +33,10 @@ kotlin {
     }
 }
 
+application {
+    mainClass.set("org.danilopianini.acsos23.Bot")
+}
+
 tasks.test {
     useJUnitPlatform()
     testLogging {
@@ -42,35 +45,5 @@ tasks.test {
         showStackTraces = true
         events(*org.gradle.api.tasks.testing.logging.TestLogEvent.values())
         exceptionFormat = org.gradle.api.tasks.testing.logging.TestExceptionFormat.FULL
-    }
-}
-
-signing {
-    val signingKey: String? by project
-    val signingPassword: String? by project
-    useInMemoryPgpKeys(signingKey, signingPassword)
-}
-
-publishOnCentral {
-    projectLongName.set("Template Kotlin JVM Project")
-    projectDescription.set("A template repository for Kotlin JVM projects")
-    repository("https://maven.pkg.github.com/danysk/${rootProject.name}".toLowerCase()) {
-        user.set("DanySK")
-        password.set(System.getenv("GITHUB_TOKEN"))
-    }
-    publishing {
-        publications {
-            withType<MavenPublication> {
-                pom {
-                    developers {
-                        developer {
-                            name.set("Danilo Pianini")
-                            email.set("danilo.pianini@gmail.com")
-                            url.set("http://www.danilopianini.org/")
-                        }
-                    }
-                }
-            }
-        }
     }
 }

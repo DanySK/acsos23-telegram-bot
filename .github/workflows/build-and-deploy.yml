@@ -33,6 +33,20 @@ jobs:
           maven-central-password: ${{ secrets.MAVEN_CENTRAL_PASSWORD }}
           signing-key: ${{ secrets.SIGNING_KEY }}
           signing-password: ${{ secrets.SIGNING_PASSWORD }}
+  containerize:
+    runs-on: ubuntu-22.04
+    needs:
+      - build
+    if: >-
+      always() && (
+        contains(join(needs.*.result, ','), 'failure')
+        || !contains(join(needs.*.result, ','), 'cancelled')
+      )
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3.5.3
+      - name: Build the container
+        run: docker build -t danysk/acsos23-telegram-bot .
   release:
     concurrency:
       # Only one release job at a time. Strictly sequential.

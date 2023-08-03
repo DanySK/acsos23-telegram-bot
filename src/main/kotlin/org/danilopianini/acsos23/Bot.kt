@@ -1,3 +1,7 @@
+@file:JvmName("Bot")
+
+package org.danilopianini.acsos23
+
 import com.github.kotlintelegrambot.bot
 import com.github.kotlintelegrambot.dispatch
 import com.github.kotlintelegrambot.dispatcher.text
