@@ -1,3 +1,15 @@
+## [1.2.0](https://github.com/DanySK/acsos23-telegram-bot/compare/1.1.0...1.2.0) (2023-08-04)
+
+
+### Features
+
+* auto-build the auto-updater ([f286eb7](https://github.com/DanySK/acsos23-telegram-bot/commit/f286eb793b9fbae06d236623b9851b6d75f634a2))
+
+
+### Dependency updates
+
+* **deps:** update docker docker tag to v24.0.5 ([cc27feb](https://github.com/DanySK/acsos23-telegram-bot/commit/cc27febdb252f4c055b1563c8b066b49ca6fe720))
+
 ## [1.1.0](https://github.com/DanySK/acsos23-telegram-bot/compare/1.0.0...1.1.0) (2023-08-04)
 
 
