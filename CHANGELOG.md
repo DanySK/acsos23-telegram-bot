@@ -9,6 +9,19 @@
 
 ### Build and continuous integration
 
+* restructure the CI pipeline ([5155d61](https://github.com/DanySK/acsos23-telegram-bot/commit/5155d61432198e8f547bad1ab7e19ae07908a8c0))
+
+## 1.0.0 (2023-08-04)
+
+
+### Features
+
+* create a working container for the bot ([27ecfa4](https://github.com/DanySK/acsos23-telegram-bot/commit/27ecfa470e9176d49eaee081f9eb6bb75a340c03))
+* implement an echo bot ([d59e1f5](https://github.com/DanySK/acsos23-telegram-bot/commit/d59e1f5452acfa6503c970d70ab35146733beb4f))
+
+
+### Build and continuous integration
+
 * add write permission on release ([926c5e1](https://github.com/DanySK/acsos23-telegram-bot/commit/926c5e146cf019612c7d3ac1fe53a7f4d6480a2b))
 * disable attempts to deploy on Central ([c04f9a3](https://github.com/DanySK/acsos23-telegram-bot/commit/c04f9a38a53301d60219939989ca417bc6cf03b5))
 * restructure the pipeline ([9d8bf40](https://github.com/DanySK/acsos23-telegram-bot/commit/9d8bf40e84d430b871f3175a1411dbc05edffb8c))
