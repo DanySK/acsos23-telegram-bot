@@ -17,26 +17,13 @@ jobs:
         uses: DanySK/action-checkout@0.2.10
       - uses: DanySK/build-check-deploy-gradle-action@2.2.8
         with:
-          # Dry-deployment
-          deploy-command: >-
-            ./gradlew uploadKotlin close --parallel
           should-run-codecov: ${{ runner.os == 'Linux' }}
-          should-deploy: >-
-            ${{
-              runner.os == 'Linux'
-              && !github.event.repository.fork
-              && (
-                github.event_name != 'pull_request'
-                || github.event.pull_request.head.repo.full_name == github.repository
-              )
-            }}
+          should-deploy: false
           maven-central-password: ${{ secrets.MAVEN_CENTRAL_PASSWORD }}
           signing-key: ${{ secrets.SIGNING_KEY }}
           signing-password: ${{ secrets.SIGNING_PASSWORD }}
   containerize:
     runs-on: ubuntu-22.04
-    needs:
-      - build
     if: >-
       always() && (
         contains(join(needs.*.result, ','), 'failure')
@@ -48,11 +35,14 @@ jobs:
       - name: Build the container
         run: docker build -t danysk/acsos23-telegram-bot .
   release:
+    permissions:
+      contents: write
     concurrency:
       # Only one release job at a time. Strictly sequential.
       group: release-${{ github.workflow }}-${{ github.event.number || github.ref }}
     needs:
       - build
+      - containerize
     runs-on: ubuntu-latest
     if: >-
       !github.event.repository.fork
@@ -64,7 +54,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3.5.3
         with:
-          token: ${{ secrets.DEPLOYMENT_TOKEN }}
+          token: ${{ github.token }}
       - name: Find the version of Node from package.json
         id: node-version
         run: echo "version=$(jq -r .engines.node package.json)" >> $GITHUB_OUTPUT
@@ -72,19 +62,11 @@ jobs:
         uses: actions/setup-node@v3.7.0
         with:
           node-version: ${{ steps.node-version.outputs.version }}
-      - uses: DanySK/build-check-deploy-gradle-action@2.2.8
-        with:
-          build-command: true
-          check-command: true
-          deploy-command: |
-            npm install
-            npx semantic-release
-          should-run-codecov: false
-          should-deploy: false
-          github-token: ${{ github.token }}
-          maven-central-password: ${{ secrets.MAVEN_CENTRAL_PASSWORD }}
-          signing-key: ${{ secrets.SIGNING_KEY }}
-          signing-password: ${{ secrets.SIGNING_PASSWORD }}
+      - run: npm install
+      - run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
   success:
     runs-on: ubuntu-22.04
     needs:
