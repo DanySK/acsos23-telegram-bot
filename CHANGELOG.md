@@ -1,3 +1,15 @@
+## [1.1.0](https://github.com/DanySK/acsos23-telegram-bot/compare/1.0.0...1.1.0) (2023-08-04)
+
+
+### Features
+
+* add an auto (re)start service ([4428541](https://github.com/DanySK/acsos23-telegram-bot/commit/442854142ab3b455ee6fe6a9dc876d180ca88187))
+
+
+### Bug Fixes
+
+* **ci:** release a latest version on dockerhub ([2a883e9](https://github.com/DanySK/acsos23-telegram-bot/commit/2a883e9aed11f9dc3064729d879868d675866d9d))
+
 ## 1.0.0 (2023-08-04)
 
 
