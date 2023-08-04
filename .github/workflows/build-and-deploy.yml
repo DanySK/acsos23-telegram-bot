@@ -24,16 +24,18 @@ jobs:
           signing-password: ${{ secrets.SIGNING_PASSWORD }}
   containerize:
     runs-on: ubuntu-22.04
-    if: >-
-      always() && (
-        contains(join(needs.*.result, ','), 'failure')
-        || !contains(join(needs.*.result, ','), 'cancelled')
-      )
     steps:
       - name: Checkout
         uses: actions/checkout@v3.5.3
       - name: Build the container
         run: docker build -t danysk/acsos23-telegram-bot .
+  autoupdate-container:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3.5.3
+      - name: Build the container
+        run: docker build -t danysk/acsos23-telegram-bot-autoupdate autoupdate
   release:
     permissions:
       contents: write
