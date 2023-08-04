@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/DanySK/acsos23-telegram-bot/compare/1.0.0...1.0.1) (2023-08-04)
+
+
+### Bug Fixes
+
+* **ci:** release a latest version on dockerhub ([405b986](https://github.com/DanySK/acsos23-telegram-bot/commit/405b986ec3ef48f0e193e94ab97432de793443cd))
+
 ## 1.0.0 (2023-08-04)
 
 
