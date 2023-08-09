@@ -1,3 +1,15 @@
+## [1.2.1](https://github.com/DanySK/acsos23-telegram-bot/compare/1.2.0...1.2.1) (2023-08-09)
+
+
+### Bug Fixes
+
+* **release:** correctly tag the autoupdate bot ([b55100b](https://github.com/DanySK/acsos23-telegram-bot/commit/b55100b7ef6fc748be01e5bba4e0cac95d4a1d6f))
+
+
+### Dependency updates
+
+* **deps:** update plugin kotlin-qa to v0.49.0 ([4c9ad0d](https://github.com/DanySK/acsos23-telegram-bot/commit/4c9ad0d0e6792a919b7c5c8381911df3d6a69ddb))
+
 ## [1.2.0](https://github.com/DanySK/acsos23-telegram-bot/compare/1.1.0...1.2.0) (2023-08-04)
 
 
