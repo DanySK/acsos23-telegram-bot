@@ -24,6 +24,9 @@ jobs:
           signing-password: ${{ secrets.SIGNING_PASSWORD }}
   containerize:
     runs-on: ubuntu-22.04
+    concurrency:
+      group: main-container-${{ github.workflow }}-${{ github.event.number || github.ref }}
+      cancel-in-progress: true
     steps:
       - name: Checkout
         uses: actions/checkout@v3.5.3
@@ -31,6 +34,9 @@ jobs:
         run: docker build -t danysk/acsos23-telegram-bot .
   autoupdate-container:
     runs-on: ubuntu-22.04
+    concurrency:
+      group: autoupdate-container-${{ github.workflow }}-${{ github.event.number || github.ref }}
+      cancel-in-progress: true
     steps:
       - name: Checkout
         uses: actions/checkout@v3.5.3
