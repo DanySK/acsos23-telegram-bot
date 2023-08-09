@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/DanySK/acsos23-telegram-bot/compare/1.2.2...1.2.3) (2023-08-09)
+
+
+### Bug Fixes
+
+* try to fix the service create command ([445cea6](https://github.com/DanySK/acsos23-telegram-bot/commit/445cea68f647e3dca5c82e136cbe3195a0f0fe98))
+
 ## [1.2.2](https://github.com/DanySK/acsos23-telegram-bot/compare/1.2.1...1.2.2) (2023-08-09)
 
 
