@@ -1,3 +1,16 @@
+## [1.2.2](https://github.com/DanySK/acsos23-telegram-bot/compare/1.2.1...1.2.2) (2023-08-09)
+
+
+### Bug Fixes
+
+* fix broken image name in autoupdater ([203355c](https://github.com/DanySK/acsos23-telegram-bot/commit/203355c13dee08720db18c4661a1bc348f815da2))
+
+
+### Build and continuous integration
+
+* fix the concurrency groups ([f5c7601](https://github.com/DanySK/acsos23-telegram-bot/commit/f5c7601055c3c4a6725485b4850cd605b3863dee))
+* releasing requires the autoupdate-container build to work ([f64cec9](https://github.com/DanySK/acsos23-telegram-bot/commit/f64cec9e429b8ecae5867e6c7ae754baaaea4e9e))
+
 ## [1.2.1](https://github.com/DanySK/acsos23-telegram-bot/compare/1.2.0...1.2.1) (2023-08-09)
 
 
