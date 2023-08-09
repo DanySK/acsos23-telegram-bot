@@ -43,6 +43,7 @@ jobs:
       # Only one release job at a time. Strictly sequential.
       group: release-${{ github.workflow }}-${{ github.event.number || github.ref }}
     needs:
+      - autoupdate-container
       - build
       - containerize
     runs-on: ubuntu-latest
