@@ -1,3 +1,19 @@
+## [1.2.4](https://github.com/DanySK/acsos23-telegram-bot/compare/1.2.3...1.2.4) (2023-08-23)
+
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-node action to v3.8.0 ([46debed](https://github.com/DanySK/acsos23-telegram-bot/commit/46debed22c8e97984cf45780baccab9e6b442e46))
+* **deps:** update actions/setup-node action to v3.8.1 ([cb035b3](https://github.com/DanySK/acsos23-telegram-bot/commit/cb035b3435e868380c210bb45a1b51b28524caee))
+
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin.jvm to v1.9.10 ([35122fe](https://github.com/DanySK/acsos23-telegram-bot/commit/35122fee93a0e11392637c9e34381131ec701043))
+* **deps:** update dependency gradle to v8.3 ([23bbd90](https://github.com/DanySK/acsos23-telegram-bot/commit/23bbd904b37d9586d8ebd338c7c69abed410df64))
+* **deps:** update dependency org.mockito:mockito-core to v5.5.0 ([c0a2f61](https://github.com/DanySK/acsos23-telegram-bot/commit/c0a2f6194c087de1426aec091d2b09c2fa55a0f1))
+* **deps:** update plugin org.gradle.toolchains.foojay-resolver-convention to v0.7.0 ([752ac8d](https://github.com/DanySK/acsos23-telegram-bot/commit/752ac8dd5d82ce3ca62ff00c1d1161fa768e5f54))
+
 ## [1.2.3](https://github.com/DanySK/acsos23-telegram-bot/compare/1.2.2...1.2.3) (2023-08-09)
 
 
