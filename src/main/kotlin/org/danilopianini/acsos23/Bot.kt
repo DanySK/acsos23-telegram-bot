@@ -8,7 +8,7 @@ import com.github.kotlintelegrambot.dispatcher.text
 import com.github.kotlintelegrambot.entities.ChatId
 
 /**
- * An hello world.
+ * Bot Entrypoint.
  */
 fun main() {
     val bot = bot {
@@ -18,6 +18,7 @@ fun main() {
         dispatch {
             text {
                 bot.sendMessage(ChatId.fromId(message.chat.id), text = text)
+                bot.sendMessage(ChatId.fromId(message.chat.id), text = "custom message")
             }
         }
     }
