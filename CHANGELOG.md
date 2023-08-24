@@ -1,3 +1,10 @@
+## [1.3.0](https://github.com/DanySK/acsos23-telegram-bot/compare/1.2.4...1.3.0) (2023-08-24)
+
+
+### Features
+
+* make the bot a double-echo ([c654e03](https://github.com/DanySK/acsos23-telegram-bot/commit/c654e030cda071cd7c40abf731732aab7fade0ee))
+
 ## [1.2.4](https://github.com/DanySK/acsos23-telegram-bot/compare/1.2.3...1.2.4) (2023-08-23)
 
 
