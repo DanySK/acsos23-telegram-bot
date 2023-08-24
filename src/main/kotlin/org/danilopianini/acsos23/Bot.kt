@@ -18,7 +18,7 @@ fun main() {
         dispatch {
             text {
                 bot.sendMessage(ChatId.fromId(message.chat.id), text = text)
-                bot.sendMessage(ChatId.fromId(message.chat.id), text = "custom message")
+                bot.sendMessage(ChatId.fromId(message.chat.id), text = text)
             }
         }
     }
