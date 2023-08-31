@@ -1,3 +1,25 @@
+## [1.3.1](https://github.com/DanySK/acsos23-telegram-bot/compare/1.3.0...1.3.1) (2023-08-31)
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v3.6.0 ([afaba85](https://github.com/DanySK/acsos23-telegram-bot/commit/afaba85b8fbf30dbb9f3d17e2dc4110bef354286))
+* **deps:** update danysk/action-checkout action to v0.2.11 ([e7bd137](https://github.com/DanySK/acsos23-telegram-bot/commit/e7bd137e17159d3285b6a6d0fb5786010e4fe7c2))
+
+
+### Documentation
+
+* **deps:** update plugin dokka to v1.9.0 ([7b98864](https://github.com/DanySK/acsos23-telegram-bot/commit/7b98864796cb0acaae0e9cc3fc5e5d53045246e8))
+
+
+### Dependency updates
+
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.44 ([15d2c6e](https://github.com/DanySK/acsos23-telegram-bot/commit/15d2c6e32acb6782c947a2f1ddce27f1ea91395d))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.46 ([130b57c](https://github.com/DanySK/acsos23-telegram-bot/commit/130b57c700078699e12feaa162ce85b58f147cb9))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.47 ([661fad2](https://github.com/DanySK/acsos23-telegram-bot/commit/661fad2c36ef968a61755c803a0e491c0ae5a2cc))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.49 ([93a5277](https://github.com/DanySK/acsos23-telegram-bot/commit/93a5277f31610f401ad81d0169cf033305445bb9))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.10 ([265e7ef](https://github.com/DanySK/acsos23-telegram-bot/commit/265e7efba045f4f54b4c9e30242649443cf17282))
+
 ## [1.3.0](https://github.com/DanySK/acsos23-telegram-bot/compare/1.2.4...1.3.0) (2023-08-24)
 
 
