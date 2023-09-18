@@ -18,7 +18,7 @@ fun main() {
         }
         dispatch {
             newChatMembers {
-                val username = message.from?.apply {
+                val username: String? = message.from?.run {
                     username?.let { "@$it" } ?: "$firstName $lastName"
                 }
                 if (username != null) {
@@ -26,8 +26,13 @@ fun main() {
                 }
             }
             text {
-                if (message.text.orEmpty().contains("@acsos_23_bot")) {
-                    bot.sendMessage(ChatId.fromId(message.chat.id), text = "I have been mentioned!")
+                if (message.text.orEmpty().contains("MAINTENANCE_TEST")) {
+                    bot.sendMessage(
+                        ChatId.fromId(message.chat.id),
+                        text = "I have been mentioned!",
+                        replyToMessageId = message.messageId,
+                    )
+                    bot.sendMessage(ChatId.fromId(message.chat.id), text = text)
                 }
             }
         }
