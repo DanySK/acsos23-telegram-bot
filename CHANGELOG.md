@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/DanySK/acsos23-telegram-bot/compare/1.4.0...1.4.1) (2023-09-18)
+
+
+### Bug Fixes
+
+* do not print the user info on welcome ([484d7a0](https://github.com/DanySK/acsos23-telegram-bot/commit/484d7a077f26f99774fdd2ab592d4e9fd26bbfbb))
+
 ## [1.4.0](https://github.com/DanySK/acsos23-telegram-bot/compare/1.3.1...1.4.0) (2023-09-18)
 
 
