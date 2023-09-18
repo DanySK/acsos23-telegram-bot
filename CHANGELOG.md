@@ -1,3 +1,31 @@
+## [1.4.0](https://github.com/DanySK/acsos23-telegram-bot/compare/1.3.1...1.4.0) (2023-09-18)
+
+
+### Features
+
+* try to make the bot tag-sensitive ([8995e0e](https://github.com/DanySK/acsos23-telegram-bot/commit/8995e0e47613ba8ae04d2efee0053aa9a37bdfbb))
+
+
+### Dependency updates
+
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.50 ([bff4535](https://github.com/DanySK/acsos23-telegram-bot/commit/bff4535f99b0225c8570b21470483f13795f3c18))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.53 ([d5b2a35](https://github.com/DanySK/acsos23-telegram-bot/commit/d5b2a35f2e3891f1890d5b6d42177e2f1c5ffc3a))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.54 ([29fcaac](https://github.com/DanySK/acsos23-telegram-bot/commit/29fcaacf6e278f96e958bbff85960e2981784627))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.55 ([4beeecc](https://github.com/DanySK/acsos23-telegram-bot/commit/4beeecca3c01b67937f0c679b7483801241a02a3))
+* **deps:** update docker docker tag to v24.0.6 ([39a5ccb](https://github.com/DanySK/acsos23-telegram-bot/commit/39a5ccb01ac7279beca8827557e3e7245aac6fb4))
+* **deps:** update kotest to v5.7.0 ([e9fb2b9](https://github.com/DanySK/acsos23-telegram-bot/commit/e9fb2b9f68e19a742a6c39f15f0c60aa107f69f5))
+* **deps:** update kotest to v5.7.1 ([517d495](https://github.com/DanySK/acsos23-telegram-bot/commit/517d495d18eb2fbe6e77a3f1ce037554e87369e9))
+* **deps:** update kotest to v5.7.2 ([7698316](https://github.com/DanySK/acsos23-telegram-bot/commit/76983163bc9384586597383dc5ca61ba975ea281))
+* **deps:** update plugin com.gradle.enterprise to v3.15 ([c82a10d](https://github.com/DanySK/acsos23-telegram-bot/commit/c82a10dbf53a168f61803f4b31029bc6ef30479f))
+* **deps:** update plugin kotlin-qa to v0.49.1 ([e4492dc](https://github.com/DanySK/acsos23-telegram-bot/commit/e4492dcc2baeb935505822bb1462cd3853baf8e3))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v4 ([40356fb](https://github.com/DanySK/acsos23-telegram-bot/commit/40356fba454eb1f07443a448db3c78af609819c7))
+* **deps:** update danysk/action-checkout action to v0.2.12 ([40aea71](https://github.com/DanySK/acsos23-telegram-bot/commit/40aea716a574a82300ca086b7c9c492a8805539d))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.9 ([02d068b](https://github.com/DanySK/acsos23-telegram-bot/commit/02d068b12bae98108ec01263dc1a57fb39807137))
+
 ## [1.3.1](https://github.com/DanySK/acsos23-telegram-bot/compare/1.3.0...1.3.1) (2023-08-31)
 
 
