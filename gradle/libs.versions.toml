@@ -4,6 +4,7 @@ kotlin = "1.9.10"
 mockito = "5.5.0"
 
 [libraries]
+konf = "com.uchuhimo:konf-core:1.1.2"
 kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
 kotlin-stdlib-jdk8 = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk8", version.ref = "kotlin" }
 kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }

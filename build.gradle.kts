@@ -17,6 +17,7 @@ repositories {
 }
 
 dependencies {
+    implementation(libs.konf)
     implementation(libs.kotlin.stdlib)
     implementation(libs.telegram)
     testImplementation(libs.bundles.kotlin.testing)
