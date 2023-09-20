@@ -1,3 +1,10 @@
+## [1.8.0](https://github.com/DanySK/acsos23-telegram-bot/compare/1.7.0...1.8.0) (2023-09-20)
+
+
+### Features
+
+* send uptime and description to the mainline ([a8462b8](https://github.com/DanySK/acsos23-telegram-bot/commit/a8462b8afe95763b5774e0af53f1517d2f9ab7fa))
+
 ## [1.7.0](https://github.com/DanySK/acsos23-telegram-bot/compare/1.6.0...1.7.0) (2023-09-20)
 
 
