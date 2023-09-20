@@ -8,6 +8,7 @@ import java.net.URI
 import kotlin.time.Duration.Companion.hours
 import kotlin.time.TimeSource
 
+@Suppress("ConstructorParameterNaming", "UndocumentedPublicProperty", "UndocumentedPublicClass")
 object Committees {
     data class Person(
         val FullName: String,
@@ -43,6 +44,9 @@ object Committees {
         disable(Feature.FAIL_ON_UNKNOWN_PATH)
     }.from.json.file(file)
 
+    /**
+     * Returns the committees of the conference.
+     */
     fun committes() = committees[People.committees].also {
         if (lastUpdate.elapsedNow() > 1.hours) {
             lastUpdate = TimeSource.Monotonic.markNow()
