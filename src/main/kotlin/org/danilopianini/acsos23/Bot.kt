@@ -12,6 +12,8 @@ import java.time.ZoneOffset
 import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
 
+private fun rx(regex: String) = Regex(regex, RegexOption.IGNORE_CASE)
+
 /**
  * Bot Entrypoint.
  */
@@ -33,6 +35,8 @@ fun main() {
             text {
                 val chatId = ChatId.fromId(message.chat.id)
                 val receivedText = message.text.orEmpty()
+                fun match(regex: String) = receivedText.contains(rx(regex))
+                fun reply(text: String) = bot.sendMessage(chatId, text, replyToMessageId = message.messageId)
                 if (receivedText.contains("MAINTENANCE_TEST")) {
                     bot.sendMessage(
                         ChatId.fromId(message.chat.id),
@@ -40,18 +44,19 @@ fun main() {
                         replyToMessageId = message.messageId,
                     )
                     bot.sendMessage(ChatId.fromId(message.chat.id), text = text)
-                    if (receivedText.contains("committees")) {
-                        bot.sendMessage(ChatId.fromId(message.chat.id), text = Committees.committes().toString())
-                    }
-                    if (receivedText.contains("uptime")) {
-                        bot.sendMessage(
-                            chatId,
-                            text = """
+                    when {
+                        receivedText.contains("committees") ->
+                            bot.sendMessage(ChatId.fromId(message.chat.id), text = Committees.committes().toString())
+                        match("""(describe|what('s|\s+is))\s+(acsos|this\s+conference)""") ->
+                            reply(Program.description())
+                        match("""how long have you been (alive|up)""") ->
+                            reply(
+                                """
                                 I have been up for ${ManagementFactory.getRuntimeMXBean().uptime} ms, since ${
-                                ZonedDateTime.now(ZoneOffset.UTC).format(DateTimeFormatter.ISO_INSTANT)
-                            }
-                            """.trimIndent(),
-                        )
+                                    ZonedDateTime.now(ZoneOffset.UTC).format(DateTimeFormatter.ISO_INSTANT)
+                                }
+                                """.trimIndent(),
+                            )
                     }
                 }
             }
