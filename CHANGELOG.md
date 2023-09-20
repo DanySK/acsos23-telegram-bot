@@ -1,3 +1,10 @@
+## [1.7.0](https://github.com/DanySK/acsos23-telegram-bot/compare/1.6.0...1.7.0) (2023-09-20)
+
+
+### Features
+
+* add a "no match" message ([f28b440](https://github.com/DanySK/acsos23-telegram-bot/commit/f28b440b738698ea3fff7f30bed3777581311ede))
+
 ## [1.6.0](https://github.com/DanySK/acsos23-telegram-bot/compare/1.5.0...1.6.0) (2023-09-20)
 
 
