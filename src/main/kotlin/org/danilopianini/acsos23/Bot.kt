@@ -37,16 +37,8 @@ fun main() {
                 val receivedText = message.text.orEmpty()
                 fun match(regex: String) = receivedText.contains(rx(regex))
                 fun reply(text: String) = bot.sendMessage(chatId, text, replyToMessageId = message.messageId)
-                if (receivedText.contains("MAINTENANCE_TEST")) {
-                    bot.sendMessage(
-                        ChatId.fromId(message.chat.id),
-                        text = "I have been mentioned!",
-                        replyToMessageId = message.messageId,
-                    )
-                    bot.sendMessage(ChatId.fromId(message.chat.id), text = text)
+                if (receivedText.contains("@acsos_23_bot")) {
                     when {
-                        receivedText.contains("committees", ignoreCase = true) ->
-                            bot.sendMessage(ChatId.fromId(message.chat.id), text = Committees.committes().toString())
                         match("""(describe|what('s|\s+is))\s+(acsos|this\s+conference)""") ->
                             reply(Program.description())
                         match("""how long have you been (alive|up)""") ->
@@ -57,6 +49,18 @@ fun main() {
                                 }
                                 """.trimIndent(),
                             )
+                    }
+                }
+                if (receivedText.contains("MAINTENANCE_TEST")) {
+                    bot.sendMessage(
+                        ChatId.fromId(message.chat.id),
+                        text = "I have been mentioned!",
+                        replyToMessageId = message.messageId,
+                    )
+                    bot.sendMessage(ChatId.fromId(message.chat.id), text = text)
+                    when {
+                        receivedText.contains("committees", ignoreCase = true) ->
+                            bot.sendMessage(ChatId.fromId(message.chat.id), text = Committees.committes().toString())
                         else -> reply("No match!")
                     }
                 }
