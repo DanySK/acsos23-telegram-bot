@@ -45,7 +45,7 @@ fun main() {
                     )
                     bot.sendMessage(ChatId.fromId(message.chat.id), text = text)
                     when {
-                        receivedText.contains("committees") ->
+                        receivedText.contains("committees", ignoreCase = true) ->
                             bot.sendMessage(ChatId.fromId(message.chat.id), text = Committees.committes().toString())
                         match("""(describe|what('s|\s+is))\s+(acsos|this\s+conference)""") ->
                             reply(Program.description())
@@ -57,6 +57,7 @@ fun main() {
                                 }
                                 """.trimIndent(),
                             )
+                        else -> reply("No match!")
                     }
                 }
             }
