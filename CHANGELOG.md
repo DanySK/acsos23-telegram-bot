@@ -1,3 +1,21 @@
+## [1.5.0](https://github.com/DanySK/acsos23-telegram-bot/compare/1.4.1...1.5.0) (2023-09-20)
+
+
+### Features
+
+* add committee parser ([af02cd1](https://github.com/DanySK/acsos23-telegram-bot/commit/af02cd1495bb712a067dca430804d566e3b92355))
+
+
+### Dependency updates
+
+* **deps:** update node.js to 18.18 ([e99f418](https://github.com/DanySK/acsos23-telegram-bot/commit/e99f418af104a26160d81c985bcb96b937253fb3))
+* **deps:** update plugin kotlin-qa to v0.50.0 ([fdaabbd](https://github.com/DanySK/acsos23-telegram-bot/commit/fdaabbd648e7ad6c27922c603bd5215783c20e35))
+
+
+### Style improvements
+
+* suppress pedantic Detekt warnings ([0945335](https://github.com/DanySK/acsos23-telegram-bot/commit/09453355cfda9d0fb7193de556c6aaef696232f3))
+
 ## [1.4.1](https://github.com/DanySK/acsos23-telegram-bot/compare/1.4.0...1.4.1) (2023-09-18)
 
 
