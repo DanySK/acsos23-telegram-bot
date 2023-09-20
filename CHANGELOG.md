@@ -1,3 +1,15 @@
+## [1.6.0](https://github.com/DanySK/acsos23-telegram-bot/compare/1.5.0...1.6.0) (2023-09-20)
+
+
+### Features
+
+* begin fetching the program ([6201011](https://github.com/DanySK/acsos23-telegram-bot/commit/62010115a8bffd0da444f86da22f8e1388e17a71))
+
+
+### Performance improvements
+
+* improve the committees fetching ([2d4972c](https://github.com/DanySK/acsos23-telegram-bot/commit/2d4972c95ae3fb6610674af3693bc7590d1030c4))
+
 ## [1.5.0](https://github.com/DanySK/acsos23-telegram-bot/compare/1.4.1...1.5.0) (2023-09-20)
 
 
