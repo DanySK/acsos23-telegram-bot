@@ -29,7 +29,7 @@ object Committees {
         val Members: List<Person>,
     )
 
-    object People : ConfigSpec() {
+    object People : ConfigSpec("") {
         val committees by required<List<Committee>>()
     }
 
@@ -38,7 +38,7 @@ object Committees {
         URI("https://2023.acsos.org/dataexport/02ea9823-aed3-4fc0-8f1f-117ff63ee167/committee-data.json/false").toURL()
     private var lastUpdate = TimeSource.Monotonic.markNow().also { readData() }
 
-    private fun readData() = file.writeText("""{ "people": ${url.readText()} }""")
+    private fun readData() = file.writeText(url.readText())
     private val committees = Config {
         addSpec(People)
         disable(Feature.FAIL_ON_UNKNOWN_PATH)
