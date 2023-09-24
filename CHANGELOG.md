@@ -1,3 +1,22 @@
+## [1.8.1](https://github.com/DanySK/acsos23-telegram-bot/compare/1.8.0...1.8.1) (2023-09-24)
+
+
+### Dependency updates
+
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.56 ([80608fe](https://github.com/DanySK/acsos23-telegram-bot/commit/80608fef5694cd4769c17f08734f32876fce6c57))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.60 ([be8ed5f](https://github.com/DanySK/acsos23-telegram-bot/commit/be8ed5fd5fa378a231f622e3fe082769d8a3af0a))
+
+
+### Bug Fixes
+
+* do not print 'null' on welcome messages with missing surnames ([1e1dc5f](https://github.com/DanySK/acsos23-telegram-bot/commit/1e1dc5f0ada6d9e5a3b228f283428db46a552f70))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v4.1.0 ([3addfcc](https://github.com/DanySK/acsos23-telegram-bot/commit/3addfcc3af0d88569439896d687b637f4328b63a))
+* **deps:** update danysk/action-checkout action to v0.2.13 ([2413ce2](https://github.com/DanySK/acsos23-telegram-bot/commit/2413ce297efd168b8d1012a6fa5f6ef203def7a3))
+
 ## [1.8.0](https://github.com/DanySK/acsos23-telegram-bot/compare/1.7.0...1.8.0) (2023-09-20)
 
 
