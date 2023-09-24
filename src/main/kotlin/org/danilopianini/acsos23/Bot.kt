@@ -26,7 +26,7 @@ fun main() {
             newChatMembers {
                 val chatId = ChatId.fromId(message.chat.id)
                 val username: String? = message.from?.run {
-                    username?.let { "@$it" } ?: "$firstName $lastName"
+                    username?.let { "@$it" } ?: "$firstName ${lastName.orEmpty()}"
                 }
                 if (username != null) {
                     bot.sendMessage(chatId, text = "Welcome to ACSOS 2023, $username!")
