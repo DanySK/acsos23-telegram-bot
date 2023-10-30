@@ -1,4 +1,4 @@
-FROM docker:24.0.6-cli-alpine3.18
+FROM docker:24.0.7-cli-alpine3.18
 RUN mkdir /app
 WORKDIR /app
 COPY restart.sh restart.sh
