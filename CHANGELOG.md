@@ -1,3 +1,58 @@
+## [1.8.5](https://github.com/DanySK/acsos23-telegram-bot/compare/1.8.4...1.8.5) (2024-03-04)
+
+
+### Dependency updates
+
+* **deps:** update dependency gradle to v8.6 ([87fda23](https://github.com/DanySK/acsos23-telegram-bot/commit/87fda23717c0006a7c6ff5af31712abf5a21958f))
+* **deps:** update dependency org.mockito:mockito-core to v5.10.0 ([33a03b1](https://github.com/DanySK/acsos23-telegram-bot/commit/33a03b1cb88191356121de73c268e3c511154aab))
+* **deps:** update dependency org.mockito:mockito-core to v5.11.0 ([0198a7b](https://github.com/DanySK/acsos23-telegram-bot/commit/0198a7b06020d1ff9a892657e1188d8aa98dba19))
+* **deps:** update dependency org.mockito:mockito-core to v5.9.0 ([52292a0](https://github.com/DanySK/acsos23-telegram-bot/commit/52292a075730b569f53f3f1d44a8fe62c104690b))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.85 ([5181460](https://github.com/DanySK/acsos23-telegram-bot/commit/51814607ba53e98a7bfb2fa0d1c8e39fe9864ebd))
+* **deps:** update eclipse-temurin docker tag ([bd47834](https://github.com/DanySK/acsos23-telegram-bot/commit/bd478348342d1848d09d63d9ea5bc9f7227d91d3))
+* **deps:** update node.js to 20.11 ([493dd9c](https://github.com/DanySK/acsos23-telegram-bot/commit/493dd9cdb8a9dd88e8f45a79124fa096f6902342))
+* **deps:** update plugin com.gradle.enterprise to v3.16.2 ([f3edb25](https://github.com/DanySK/acsos23-telegram-bot/commit/f3edb25da9cbb704cb9332ccd7e6f2389009ab74))
+* **deps:** update plugin gitsemver to v3 ([3b72130](https://github.com/DanySK/acsos23-telegram-bot/commit/3b72130feeae55c93b993ec5748e7e87350d2c38))
+* **deps:** update plugin gitsemver to v3.1.0 ([8f79f22](https://github.com/DanySK/acsos23-telegram-bot/commit/8f79f22c7f0fc826dafbbc4a0fc437f052ca39f9))
+* **deps:** update plugin gitsemver to v3.1.1 ([8c689f7](https://github.com/DanySK/acsos23-telegram-bot/commit/8c689f78423571d7ea2654b861c68ddfc19e5ce3))
+* **deps:** update plugin kotlin-qa to v0.58.0 ([7e0ed6f](https://github.com/DanySK/acsos23-telegram-bot/commit/7e0ed6fa619eda1e78b27ee44891e3d1a5ec8540))
+* **deps:** update plugin kotlin-qa to v0.59.0 ([b417194](https://github.com/DanySK/acsos23-telegram-bot/commit/b41719474786b4de243dbec7857b5a06d6d963f8))
+* **deps:** update plugin kotlin-qa to v0.59.1 ([92a78ea](https://github.com/DanySK/acsos23-telegram-bot/commit/92a78ea2502c2152a16607bb0a4a63b0452cfcd5))
+* **deps:** update plugin kotlin-qa to v0.60.0 ([c193d4d](https://github.com/DanySK/acsos23-telegram-bot/commit/c193d4d982c4a0cf574943ec0b78c6033ac12cd9))
+* **deps:** update plugin kotlin-qa to v0.60.1 ([d0b2067](https://github.com/DanySK/acsos23-telegram-bot/commit/d0b20678b2c134c94d4a265a3701ac3f9e4aea81))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.17 ([cfdaec2](https://github.com/DanySK/acsos23-telegram-bot/commit/cfdaec20c3bcd84454cceaebeed4aecdd6a2e35c))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.18 ([ad5b148](https://github.com/DanySK/acsos23-telegram-bot/commit/ad5b1486425cc70446f30d761f4220daa44d2f19))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2 ([57e4d99](https://github.com/DanySK/acsos23-telegram-bot/commit/57e4d999b9cf2500d9df44e119022aca836b83c2))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.1 ([416e4e9](https://github.com/DanySK/acsos23-telegram-bot/commit/416e4e9f16aca78fb57246e75fb38b98646c1c89))
+* **deps:** update plugin org.gradle.toolchains.foojay-resolver-convention to v0.8.0 ([a2068f7](https://github.com/DanySK/acsos23-telegram-bot/commit/a2068f7e169e5cc64203e596f8f7c2abf49060a9))
+
+
+### Documentation
+
+* **deps:** update plugin dokka to v1.9.20 ([2e371b3](https://github.com/DanySK/acsos23-telegram-bot/commit/2e371b3608d4890aaceb3faf84a693eb41299b51))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-node action to v4.0.2 ([be8d70d](https://github.com/DanySK/acsos23-telegram-bot/commit/be8d70d13b75e07b74b9d60bbbd4c108bc03ddb4))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.13 ([0ef8f5e](https://github.com/DanySK/acsos23-telegram-bot/commit/0ef8f5e39bf4213e08eb1801212fab5b601705b0))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.14 ([53e70f9](https://github.com/DanySK/acsos23-telegram-bot/commit/53e70f95ecabe050b2ec655f11a3aa16b7f47a82))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.15 ([f7d789a](https://github.com/DanySK/acsos23-telegram-bot/commit/f7d789a61824d65fd90545a1120ac85c0607feea))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.16 ([05bd000](https://github.com/DanySK/acsos23-telegram-bot/commit/05bd0004bb8d7b4f76ce68ebf08ceeb71f173a80))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.17 ([f092248](https://github.com/DanySK/acsos23-telegram-bot/commit/f0922481e5cdd421595f8b5c015b7686d7deabd2))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.18 ([ab2ad6c](https://github.com/DanySK/acsos23-telegram-bot/commit/ab2ad6cc512aab28458f8e47ff7bc70f93634b3c))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.19 ([84c63f6](https://github.com/DanySK/acsos23-telegram-bot/commit/84c63f6fe89661c80eb87d7e633cdd5f9632efa2))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.20 ([34a7ee7](https://github.com/DanySK/acsos23-telegram-bot/commit/34a7ee7b2d2269720c390a3fc1aca05e99f34c39))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.3.0 ([fb5b989](https://github.com/DanySK/acsos23-telegram-bot/commit/fb5b989bbbd17a298904e64ac88336c4754a4f79))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.3.1 ([9239b0e](https://github.com/DanySK/acsos23-telegram-bot/commit/9239b0ed7c12635a87ba932767c111c8096a771f))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.3.2 ([89923c2](https://github.com/DanySK/acsos23-telegram-bot/commit/89923c2225b88808e723f5d22a0c8c89ba93171a))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.4.0 ([b2e5aa8](https://github.com/DanySK/acsos23-telegram-bot/commit/b2e5aa85d6e3197303d3691c260ce4ebb9e90c51))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.4.1 ([b95343e](https://github.com/DanySK/acsos23-telegram-bot/commit/b95343eda4ecb7698a0f1093e8b03bab2bfbc906))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.4.2 ([31a04ae](https://github.com/DanySK/acsos23-telegram-bot/commit/31a04aebe67227997cddc0565d0f11eda3a8f3be))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.4.3 ([b91235a](https://github.com/DanySK/acsos23-telegram-bot/commit/b91235a8340d7176643c40bb4e38805ca879164e))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.4.4 ([77e8ffa](https://github.com/DanySK/acsos23-telegram-bot/commit/77e8ffa3049a0fc36c3f7b6a8e927c6a42336e41))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.4.5 ([e6ca22f](https://github.com/DanySK/acsos23-telegram-bot/commit/e6ca22f58761a57bcb3f782d6da22f00997ea5b3))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.4.6 ([9095e3a](https://github.com/DanySK/acsos23-telegram-bot/commit/9095e3a309a6511c8189cabc028c77c2d8023db9))
+
 ## [1.8.4](https://github.com/DanySK/acsos23-telegram-bot/compare/1.8.3...1.8.4) (2023-12-21)
 
 
