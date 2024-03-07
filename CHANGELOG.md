@@ -1,3 +1,13 @@
+## [1.8.6](https://github.com/DanySK/acsos23-telegram-bot/compare/1.8.5...1.8.6) (2024-03-07)
+
+
+### Dependency updates
+
+* **core-deps:** update kotlin monorepo to v1.9.23 ([494ba96](https://github.com/DanySK/acsos23-telegram-bot/commit/494ba966f03f4a00370a6ad90cd57ec91b87e570))
+* **deps:** update plugin gitsemver to v3.1.2 ([f053a72](https://github.com/DanySK/acsos23-telegram-bot/commit/f053a7292fd099cd2e7ed397660bc8059bbd1cab))
+* **deps:** update plugin kotlin-qa to v0.60.2 ([7619a29](https://github.com/DanySK/acsos23-telegram-bot/commit/7619a29f5132e460baabd4ab97709c3494bb5276))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.2 ([da4929d](https://github.com/DanySK/acsos23-telegram-bot/commit/da4929dca0dfca4dde1b970c69152dcd80f53f23))
+
 ## [1.8.5](https://github.com/DanySK/acsos23-telegram-bot/compare/1.8.4...1.8.5) (2024-03-04)
 
 
