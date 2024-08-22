@@ -1,3 +1,21 @@
+## [1.8.10](https://github.com/DanySK/acsos23-telegram-bot/compare/1.8.9...1.8.10) (2024-08-22)
+
+### Dependency updates
+
+* **core-deps:** update kotlin monorepo to v2.0.20 ([d35f63a](https://github.com/DanySK/acsos23-telegram-bot/commit/d35f63ad64e3852d50f7e83b5fbd8d086f0b01a0))
+* **deps:** update dependency gradle to v8.10 ([d949ecf](https://github.com/DanySK/acsos23-telegram-bot/commit/d949ecfd4c5e90f2a5600b87c2337adeba9d399f))
+* **deps:** update dependency io.github.kotlin-telegram-bot.kotlin-telegram-bot:telegram to v6.2.0 ([02c2fbd](https://github.com/DanySK/acsos23-telegram-bot/commit/02c2fbd202639d7a6e824bd64f4fc0f04dc26f47))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.96 ([29a1868](https://github.com/DanySK/acsos23-telegram-bot/commit/29a18683bca298b6e9762db746d58d292ace1c40))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.97 ([f009b31](https://github.com/DanySK/acsos23-telegram-bot/commit/f009b31115545f15db920a66ead0d17378ec7097))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.99 ([b777ae6](https://github.com/DanySK/acsos23-telegram-bot/commit/b777ae6af9071ac4dcf57ddd12020dc1894aca76))
+* **deps:** update plugin com.gradle.enterprise to v3.18 ([1fd9e8b](https://github.com/DanySK/acsos23-telegram-bot/commit/1fd9e8b0e8d9ee7e56ad31d8f9377ee34d5c62c5))
+* **deps:** update plugin kotlin-qa to v0.65.2 ([53024ec](https://github.com/DanySK/acsos23-telegram-bot/commit/53024ec30c100cb6d51d854443a10146d018c6c2))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.9 ([f107fd4](https://github.com/DanySK/acsos23-telegram-bot/commit/f107fd462847ec52d6d958ce568a6f25b5bedce7))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.3 ([99f997e](https://github.com/DanySK/acsos23-telegram-bot/commit/99f997e139f877ff09a238d52e6c610b5499a618))
+
 ## [1.8.9](https://github.com/DanySK/acsos23-telegram-bot/compare/1.8.8...1.8.9) (2024-08-06)
 
 ### Dependency updates
