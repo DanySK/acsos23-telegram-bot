@@ -7,7 +7,7 @@ jobs:
   build:
     strategy:
       matrix:
-        os: [ windows-2022, macos-14, ubuntu-22.04 ]
+        os: [ windows-2022, macos-14, ubuntu-24.04 ]
     runs-on: ${{ matrix.os }}
     concurrency:
       group: build-${{ github.workflow }}-${{ matrix.os }}-${{ github.event.number || github.ref }}
@@ -20,7 +20,7 @@ jobs:
           should-run-codecov: ${{ runner.os == 'Linux' }}
           should-deploy: false
   containerize:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     concurrency:
       group: main-container-${{ github.workflow }}-${{ github.event.number || github.ref }}
       cancel-in-progress: true
@@ -30,7 +30,7 @@ jobs:
       - name: Build the container
         run: docker build -t danysk/acsos23-telegram-bot .
   autoupdate-container:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     concurrency:
       group: autoupdate-container-${{ github.workflow }}-${{ github.event.number || github.ref }}
       cancel-in-progress: true
@@ -74,7 +74,7 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
   success:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     needs:
       - release
       - build
