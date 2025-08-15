@@ -1,7 +1,7 @@
 [versions]
 kotest = "5.9.1"
 kotlin = "2.2.10"
-mockito = "5.18.0"
+mockito = "5.19.0"
 
 [libraries]
 konf = "com.uchuhimo:konf-core:1.1.2"
