@@ -26,7 +26,7 @@ jobs:
       cancel-in-progress: true
     steps:
       - name: Checkout
-        uses: actions/checkout@v6.0.1
+        uses: actions/checkout@v6.0.2
       - name: Build the container
         run: docker build -t danysk/acsos23-telegram-bot .
   autoupdate-container:
@@ -36,7 +36,7 @@ jobs:
       cancel-in-progress: true
     steps:
       - name: Checkout
-        uses: actions/checkout@v6.0.1
+        uses: actions/checkout@v6.0.2
       - name: Build the container
         run: docker build -t danysk/acsos23-telegram-bot-autoupdate autoupdate
   release:
@@ -58,7 +58,7 @@ jobs:
       )
     steps:
       - name: Checkout
-        uses: actions/checkout@v6.0.1
+        uses: actions/checkout@v6.0.2
         with:
           token: ${{ github.token }}
       - name: Find the version of Node from package.json
